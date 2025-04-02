@@ -60,8 +60,8 @@ const page = () => {
                 {table.getRowModel().rows.map(row => (
                     <tr key={row.id} className="border">
                     {row.getVisibleCells().map(cell => (
-                        <td key={cell.id} className="p-2 border">
-                        {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                        <td key={cell.id} className="p-2 border text-center">
+                            {flexRender(cell.column.columnDef.cell, cell.getContext())}
                         </td>
                     ))}
                     </tr>
@@ -91,7 +91,6 @@ const page = () => {
 
             <div className='w-full flex flex-col gap-3 px-10 bg-gray-400'>
                 <h1>Search student by ID and name</h1>
-                
             </div>
 
             {/* charts */}

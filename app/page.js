@@ -10,9 +10,9 @@ export default function Home() {
   console.log(role)
 
   return (
-    <main className="h-full w-full flex justify-center items-center">
-      <div className="mt-20">
-        <h1 className="text-xl uppercase font-semibold text-center mb-5">Login</h1>
+    <main className="h-screen w-full flex justify-center items-center bg-[#2a2a2a]">
+      <div className="">
+        <h1 className="text-xl uppercase font-semibold text-white text-center mb-5">Login</h1>
         <AuthBox/>
       </div>
       <Toaster/>
